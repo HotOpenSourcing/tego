@@ -1,6 +1,6 @@
 {
   "name": "@tego/devkit",
-  "version": "1.6.16",
+  "version": "1.6.17",
   "description": "",
   "homepage": "https://github.com/tegojs/tego#readme",
   "bugs": {
@@ -27,8 +27,8 @@
     "tachybase.conf.tpl"
   ],
   "scripts": {
-    "build": "tsup",
-    "dev": "tsup --watch",
+    "build": "node init && tsup",
+    "dev": "node init && tsup --watch",
     "prepare": "tsup",
     "typecheck": "tsc --noEmit"
   },

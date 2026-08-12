@@ -3,18 +3,14 @@
 *.tbdump
 *.tgz
 .DS_Store
-.env
 .env.e2e
-.env.local
 .env.local.*
-.env.test
 .local
 .npmrc
 .pnpm-store
 .swc
 /.idea
 /.packs
-/.vscode
 /playwright
 /uploads
 cache/diskstore-*
@@ -49,3 +45,4 @@ docs-repo-temp/
 !packages/test/server.d.ts
 !packages/test/setup-server.d.ts
 !packages/test/vitest.d.ts
+config.bat

@@ -1,6 +1,6 @@
 {
   "name": "tego",
-  "version": "1.6.16",
+  "version": "1.6.17",
   "description": "",
   "keywords": [
     "tego",
@@ -22,15 +22,15 @@
     "tego": "./bin/tego.js"
   },
   "scripts": {
-    "build": "pkg . --no-bytecode --public-packages \"*\" --public --compress Brotli",
-    "build:debug": "pkg . --no-bytecode --public-packages \"*\" --public --debug",
-    "build:linux": "pkg --compress Brotli -t node22-linux-x64 .",
-    "build:linux:debug": "pkg --debug -t node22-linux-x64 .",
-    "build:mac": "pkg --compress Brotli -t node22-macos-arm64 .",
-    "build:mac:debug": "pkg --debug -t node22-macos-arm64 .",
-    "build:no-compress": "pkg . --no-bytecode --public-packages \"*\" --public",
-    "build:win": "pkg --compress Brotli -t node22-win-x64 .",
-    "build:win:debug": "pkg --debug -t node22-win-x64 ."
+    "build": "node init && pkg . --no-bytecode --public-packages \"*\" --public --compress Brotli",
+    "build:debug": "node init && pkg . --no-bytecode --public-packages \"*\" --public --debug",
+    "build:linux": "node init && pkg --compress Brotli -t node22-linux-x64 .",
+    "build:linux:debug": "node init && pkg --debug -t node22-linux-x64 .",
+    "build:mac": "node init && pkg --compress Brotli -t node22-macos-arm64 .",
+    "build:mac:debug": "node init && pkg --debug -t node22-macos-arm64 .",
+    "build:no-compress": "node init && pkg . --no-bytecode --public-packages \"*\" --public",
+    "build:win": "node init && pkg --compress Brotli -t node22-win-x64 .",
+    "build:win:debug": "node init && pkg --debug -t node22-win-x64 ."
   },
   "dependencies": {
     "@koa/cors": "5.0.0",

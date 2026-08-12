@@ -1,6 +1,6 @@
 {
   "name": "tego",
-  "version": "1.6.16",
+  "version": "1.6.17",
   "private": true,
   "homepage": "https://github.com/tegojs/tego#readme",
   "bugs": {
@@ -12,9 +12,9 @@
   },
   "license": "Apache-2.0",
   "scripts": {
-    "build": "tegod build",
+    "build": "node init && tegod build",
     "clean": "tegod clean",
-    "dev": "tegod dev",
+    "dev": "node init && tegod dev",
     "e2e": "tegod e2e",
     "preinstall": "npx only-allow pnpm",
     "postinstall": "tegod postinstall",
@@ -23,7 +23,7 @@
     "pm": "tegod pm",
     "prepare": "husky",
     "settings:update": "node scripts/update-settings.js",
-    "start": "tego start",
+    "start": "node init && tego start",
     "tego": "tego",
     "tegod": "tegod",
     "test": "vitest run",
